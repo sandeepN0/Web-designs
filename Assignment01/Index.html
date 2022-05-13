@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <header><h1>Employee Form</h1></header>
+</head>
+
+<body>
+    <form id="submitform">
+        <div>
+            <label>First Name</label>
+            <input id="fname" type="text" placeholder="first name">
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input id="lname" type="text" placeholder="last name">
+        </div>
+        <div>
+            <label>City</label>
+            <input id="city" type="text" placeholder="city">
+        </div>
+        <div>
+            <label>State</label>
+            <input id="state" type="text" placeholder="state">
+        </div>
+        <div>
+            <label>Country</label>
+            <input id="country" type="text" placeholder="country">
+        </div>
+        <div>
+            <button type="button" class="addrow" onclick="appendRow()">Add Row</button>
+            <button type="button" class="resetTable" onclick="resetTable()">Reset table</button>
+        </div>
+
+    </form>
+
+
+    <div class="container-one">
+        <span>
+            <h3 style="color:red" id="message"></h3>
+        </span>
+        <table id="myTable">
+            <thead>
+                <th id="fn">First Name</th>
+                <th id="ln">Last Name</th>
+                <th id="cy">City</th>
+                <th id="st">State</th>
+                <th id="cn">Country</th>
+            </thead>
+            <tbody id="mytablebody">
+                
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
